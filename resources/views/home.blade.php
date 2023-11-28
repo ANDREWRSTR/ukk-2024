@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: rgb(162, 193, 205);
       margin: 0;
       padding: 0;
     }
@@ -31,8 +31,6 @@
   <nav>
     <img style="width:100px;" src="/img/logo.png" alt="Logo">
   </nav>
-
-
 
 
 </body>

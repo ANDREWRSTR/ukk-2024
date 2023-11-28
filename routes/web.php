@@ -28,3 +28,6 @@ Route::post ('/registrasi',[PegawaiController::class, 'proses_registrasi']);
 
 Route::get ('/home',[PegawaiController::class, 'home']);
 
+Route::get ('/admin',[PegawaiController::class, 'admin']);
+
+

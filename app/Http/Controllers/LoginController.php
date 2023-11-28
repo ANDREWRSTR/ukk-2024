@@ -15,13 +15,5 @@ class LoginController extends Controller
     function login (){
         return view ('login');
     }
-    function proses_login(Request $request){
-        $data_login = $request->only("Username","Password");
-        if(auth::attempt($data_login)){
-            return redirect("table");
-        }else{
-            // return redirect("login")->with("error","username atau password salah");
-            return $data_login;
-        }
-    }
+   
 }

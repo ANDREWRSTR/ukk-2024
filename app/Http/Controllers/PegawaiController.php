@@ -28,10 +28,14 @@ class PegawaiController extends Controller
             'Telp' => $telp,
             'Level' => $level,
         ]);
-        return redirect('/login');
+        return redirect('/admin');
     }
 
     function home (){
         return view ('home');
+    }
+
+    function admin (){
+        return view ('admin');
     }
 }
