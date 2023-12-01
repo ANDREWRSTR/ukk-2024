@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PegawaiController;
+use App\Http\Controllers\KasirController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +28,11 @@ Route::get ('/registrasi',[PegawaiController::class, 'registrasi']);
 Route::post ('/registrasi',[PegawaiController::class, 'proses_registrasi']);
 
 Route::get ('/home',[PegawaiController::class, 'home']);
-
 Route::get ('/admin',[PegawaiController::class, 'admin']);
+
+Route::get ('/produk',[KasirController::class, 'produk']);
+Route::get ('/tambah',[KasirController::class, 'tambah_produk']);
+
+
 
 

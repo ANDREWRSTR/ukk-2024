@@ -36,7 +36,6 @@
 
     .container {
       display: flex;
-      
     }
 
     .menu {
@@ -47,6 +46,7 @@
       background-color: #888888;
       width: 160px;
       height: 82vh;
+      
       
     }
 
@@ -67,12 +67,45 @@
       padding: 20px;
     }
 
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 50px;
+      
+    }
+
+    th, td {
+      border: 1px solid #0d0d0d;
+      padding: 12px;
+      text-align: left;
+      width: 200px;
+    }
+
+    th {
+      background-color: #0d0d0d;
+      color: #fff;
+      
+    }
+    td {
+      background-color: #888888;
+    }
+
+    h1{
+        text-align: center;
+    }
+
     h2{
         color: #fff;
         
         margin-left: 20px;
     }
-
+    button{
+      padding: 5px;
+      margin-left:20px;
+      width:80px;
+      border-radius:5px;
+    }
     
   </style>
 </head>
@@ -91,7 +124,28 @@
       <a href="#" class="logout">Logout</a>
     </div>
     <div class="isi">
+      <h1>Data Produk</h1>
+      <table>
+        <tr>
+          <th>Nama Produk</th>
+          <th>Harga</th>
+          <th>Stok</th>
+          <th>Opsi</th>
+        </tr>
+        <tr>
+          <td>Pop Mie</td>
+          <td>5000</td>
+          <td>50</td>
+          <td>
+            <button type="button" style="background-color:red;" ><b>hapus</b></button>
+            <button type="button" style="background-color:green;" ><b>update</b></button>
+          </td>
+        </tr>
+        
 
+
+      </table>
+      
     </div>
     </div>
 </body>

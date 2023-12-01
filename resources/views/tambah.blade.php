@@ -36,7 +36,6 @@
 
     .container {
       display: flex;
-      
     }
 
     .menu {
@@ -63,7 +62,7 @@
     }
 
     .isi {
-      width: 1000px;
+      width: 900px;
       padding: 20px;
     }
 
@@ -72,8 +71,27 @@
         
         margin-left: 20px;
     }
-
-    
+    input[type="text"]{
+        margin-bottom:10px;
+        margin-left:auto;
+        margin-right:20px;
+        width:400px;
+        padding:5px;
+        border-radius:5px;
+    }
+    .kotak{
+        width:420px;
+        border:1px solid black;
+        padding:20px;
+        margin-left:360px;
+        border-radius:5%;
+        background-color:#999999;
+    }
+    button{
+        padding:5px;
+        width:70px;
+        border-radius:5px;
+    }
   </style>
 </head>
 <body>
@@ -83,16 +101,26 @@
   </header>
 
   <div class="container">
-    <div class="menu" >
-      <a href="{{ url('home') }}">Home</a>
-      <a href="{{ url('produk') }}">Produk</a>
-      <a href="{{ url('tambah') }}">tambah produk</a>
-      <a href="#">Penjualan</a>
-      <a href="#" class="logout">Logout</a>
-    </div>
-    <div class="isi">
+      <div class="menu" >
+        <a href="{{ url('home') }}">Home</a>
+        <a href="{{ url('produk') }}">Produk</a>
+        <a href="{{ url('tambah') }}">tambah produk</a>
+        <a href="#">Penjualan</a>
+        <a href="#" class="logout">Logout</a>
+      </div>
 
-    </div>
+      <div class="isi">
+        <div class="kotak">
+            <h1>Tambah Produk</h1>
+            <label>Nama Produk</label><br>
+            <input type="text" name="" id=""><br>
+            <label>Harga</label><br>
+            <input type="text" name="" id=""><br>
+            <label>Stok</label> <br>
+            <input type="text" name="" id=""><br>
+            <button type="submit">SIMPAN</button>
+        </div>
+      </div>
     </div>
 </body>
 </html>
